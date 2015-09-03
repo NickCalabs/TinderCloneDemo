@@ -11,17 +11,27 @@ import Parse
 import ParseFacebookUtilsV4
 
 class SignUpViewController: UIViewController {
-    
-    var user = PFUser.currentUser()
 
     @IBOutlet weak var genderSwitch: UISwitch!
     @IBOutlet weak var profilePic: UIImageView!
     
     @IBAction func signUp(sender: AnyObject) {
+        
+        var user = PFUser.currentUser()
+        
+        if genderSwitch.on{
+            user?.setObject(("Straight Couples"), forKey: "InterestedIn")
+        } else {
+            user?.setObject(("Gay Couples"), forKey: "InterestedIn")
+        }
+        user?.save()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var user = PFUser.currentUser()
 
         // Do any additional setup after loading the view.
         
@@ -39,18 +49,22 @@ class SignUpViewController: UIViewController {
             let image = UIImage(data: data)
             self.profilePic.image = image
             
-            self.user?.setObject(data, forKey: "ProfilePic")
-            self.user?.save()
+            user?.setObject(data, forKey: "ProfilePic")
+            user?.save()
             
             //finding gender
             let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email, gender"])
             graphRequest.startWithCompletionHandler({
                 connection, result, error in
                 
-                println(result)
+                println(result["gender"])
                 
                 var gend = result["gender"]
-                self.user?.setObject(gend, forKey: "gender")
+                user?.setObject(gend!!, forKey: "gender")
+                
+                var name = result["name"]
+                user?.setObject(name!!, forKey: "name")
+                user?.save()
                 
             })
             

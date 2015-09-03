@@ -20,12 +20,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        Parse.setApplicationId("zmx6pk1QHEsrJUCjT9ZTKuigguPTQIxpytTZ7XDS", clientKey: "TUYWxuPtmiXGfAadqRc2HcvOKZVUJnJqe2kdmhVd")
+        Parse.setApplicationId("gNWIJWOYPVi8jUEd5F4if5IdKRlSmk3SJz4LwPIm", clientKey: "gSFsQGCSh0qztulu6nnOMyNkE5y3E831c2kRzY2z")
         
 //        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         
+        
+        var pushSettings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
+        application.registerUserNotificationSettings(pushSettings)
+        application.registerForRemoteNotifications()
+        
         return true
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        println("Success")
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println("Fail")
     }
 
     func applicationWillResignActive(application: UIApplication) {

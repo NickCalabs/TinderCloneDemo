@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01594EB01B97C76500B3A4EA /* facebooklogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 01594EAF1B97C76500B3A4EA /* facebooklogin.png */; };
+		01594EB41B97CEE600B3A4EA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01594EB31B97CEE600B3A4EA /* SignUpViewController.swift */; };
 		01DC942D1B90FDF6008D9B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC942C1B90FDF6008D9B5F /* AppDelegate.swift */; };
 		01DC942F1B90FDF6008D9B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC942E1B90FDF6008D9B5F /* ViewController.swift */; };
 		01DC94321B90FDF6008D9B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DC94301B90FDF6008D9B5F /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01594EAF1B97C76500B3A4EA /* facebooklogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogin.png; sourceTree = "<group>"; };
+		01594EB31B97CEE600B3A4EA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		01DC94271B90FDF6008D9B5F /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DC942B1B90FDF6008D9B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DC942C1B90FDF6008D9B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +150,9 @@
 				01DC944D1B91741D008D9B5F /* Parse.framework */,
 				01DC942C1B90FDF6008D9B5F /* AppDelegate.swift */,
 				01DC942E1B90FDF6008D9B5F /* ViewController.swift */,
+				01594EAF1B97C76500B3A4EA /* facebooklogin.png */,
 				01DC94301B90FDF6008D9B5F /* Main.storyboard */,
+				01594EB31B97CEE600B3A4EA /* SignUpViewController.swift */,
 				01DC94331B90FDF6008D9B5F /* Images.xcassets */,
 				01DC94351B90FDF6008D9B5F /* LaunchScreen.xib */,
 				01DC942A1B90FDF6008D9B5F /* Supporting Files */,
@@ -271,6 +277,7 @@
 				01DC94321B90FDF6008D9B5F /* Main.storyboard in Resources */,
 				01DC94371B90FDF6008D9B5F /* LaunchScreen.xib in Resources */,
 				01DC94341B90FDF6008D9B5F /* Images.xcassets in Resources */,
+				01594EB01B97C76500B3A4EA /* facebooklogin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01594EB41B97CEE600B3A4EA /* SignUpViewController.swift in Sources */,
 				01DC942F1B90FDF6008D9B5F /* ViewController.swift in Sources */,
 				01DC942D1B90FDF6008D9B5F /* AppDelegate.swift in Sources */,
 			);
@@ -348,6 +356,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -392,6 +401,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -416,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nick Calabro (86LVF993B2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Tinder",
@@ -424,6 +435,7 @@
 				INFOPLIST_FILE = Tinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -431,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nick Calabro (86LVF993B2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Tinder",
@@ -439,6 +452,7 @@
 				INFOPLIST_FILE = Tinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -495,6 +509,7 @@
 				01DC94481B90FDF6008D9B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01DC94491B90FDF6008D9B5F /* Build configuration list for PBXNativeTarget "TinderTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +518,7 @@
 				01DC944B1B90FDF6008D9B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01594EB01B97C76500B3A4EA /* facebooklogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 01594EAF1B97C76500B3A4EA /* facebooklogin.png */; };
 		01594EB41B97CEE600B3A4EA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01594EB31B97CEE600B3A4EA /* SignUpViewController.swift */; };
+		016B7DEC1B99387C00B69C79 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B7DEB1B99387C00B69C79 /* TinderViewController.swift */; };
 		01DC942D1B90FDF6008D9B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC942C1B90FDF6008D9B5F /* AppDelegate.swift */; };
 		01DC942F1B90FDF6008D9B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC942E1B90FDF6008D9B5F /* ViewController.swift */; };
 		01DC94321B90FDF6008D9B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DC94301B90FDF6008D9B5F /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		01594EAF1B97C76500B3A4EA /* facebooklogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogin.png; sourceTree = "<group>"; };
 		01594EB31B97CEE600B3A4EA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		016B7DEB1B99387C00B69C79 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		01DC94271B90FDF6008D9B5F /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DC942B1B90FDF6008D9B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DC942C1B90FDF6008D9B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				01DC942E1B90FDF6008D9B5F /* ViewController.swift */,
 				01594EAF1B97C76500B3A4EA /* facebooklogin.png */,
 				01DC94301B90FDF6008D9B5F /* Main.storyboard */,
+				016B7DEB1B99387C00B69C79 /* TinderViewController.swift */,
 				01594EB31B97CEE600B3A4EA /* SignUpViewController.swift */,
 				01DC94331B90FDF6008D9B5F /* Images.xcassets */,
 				01DC94351B90FDF6008D9B5F /* LaunchScreen.xib */,
@@ -297,6 +300,7 @@
 			files = (
 				01594EB41B97CEE600B3A4EA /* SignUpViewController.swift in Sources */,
 				01DC942F1B90FDF6008D9B5F /* ViewController.swift in Sources */,
+				016B7DEC1B99387C00B69C79 /* TinderViewController.swift in Sources */,
 				01DC942D1B90FDF6008D9B5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
